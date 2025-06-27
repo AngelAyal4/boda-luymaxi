@@ -25,3 +25,7 @@ export function dev() {
 }
 
 export default series( js, css, dev )
+
+// ...existing code...
+
+export const build = series(js, css);
