@@ -6,7 +6,7 @@ const sass = gulpSass(dartSass)
 
 export function js( done ) {
     src('src/js/app.js')
-        .pipe( dest('build/js') ) 
+        .pipe( dest('dist/js') ) 
 
     done()
 }
@@ -14,7 +14,7 @@ export function js( done ) {
 export function css( done ) {
     src('src/scss/app.scss', {sourcemaps: true})
         .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css', {sourcemaps: '.'}) )
+        .pipe( dest('dist/css', {sourcemaps: '.'}) )
 
     done()
 }
