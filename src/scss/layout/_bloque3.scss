@@ -1,0 +1,57 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.bloque-3-ceremonia{
+  width: 100%;
+  position: relative;
+  height: 576px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/bloque-3-ceremonia.jpg);
+  //background-size: cover;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.contenedor-interno{
+  @include m.contenedor; 
+}
+.ceremonia{
+  font-size: 40px;
+  font-family: "Noto Serif Display";
+}
+
+.iglesia-san-roque{
+    font-size: 16px;
+  }
+
+
+.button{
+  @include m.boton(#185453, white);
+
+  width: auto;
+  height: auto;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+
+  .button1{
+  color: white;
+  font-family: v.$fuente_principal;
+  } 
+}
+
+.anillos-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.anillos {
+  width: 228px;
+  height: 80px;
+  display: block;
+}
+
+

@@ -1,0 +1,49 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.bloque-5 {
+    background-image: url(../../src/img/galeria/fondo-texturado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 102%;
+    height: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+
+.galeria-imagenes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.imagen-carrusel {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.imagen-siguiente,
+.imagen-anterior {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.imagen-siguiente {
+    right: 0;
+}
+
+.imagen-anterior {
+    left: 0;
+}

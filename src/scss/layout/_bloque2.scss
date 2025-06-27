@@ -1,0 +1,224 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.corazon-icon {
+  	position: absolute;
+  	height: 96.77%;
+  	top: 1.56%;
+  	right: -0.1px;
+  	bottom: 1.66%;
+  	max-height: 100%;
+  	width: 33.1px;
+  	object-fit: contain;
+}
+.corazon-wrapper {
+  	align-self: stretch;
+  	position: relative;
+  	height: 31px;
+}
+.de-marzo-de {
+  	position: absolute;
+	font-weight: 700;
+  	top: 0px;
+  	left: 0px;
+  	text-transform: uppercase;
+  	display: inline-block;
+  	width: 291px;
+	
+}
+.nos-acompaan {
+  	margin: 0;
+	font-family: 'Lato';
+	font-size: 24px;
+	font-weight: 1000;
+	font-style: normal;
+	
+}
+.nos-acompaan-a-container {
+  	position: absolute;
+  	top: 41px;
+  	left: 0px;
+  	display: inline-block;
+  	width: 291px;
+}
+.de-marzo-de-2026-parent {
+  	align-self: stretch;
+  	position: relative;
+  	height: 99px;
+}
+.corazon-icon1 {
+  	position: absolute;
+  	height: 99.13%;
+  	width: 8.49%;
+  	top: 0.37%;
+  	right: 91.51%;
+  	bottom: 0.5%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.corazon-container {
+  	width: 291px;
+  	position: relative;
+  	height: 23px;
+}
+.frame-group {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 29px;
+}
+.faltan {
+	font-family: Montserrat;
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: inline-block;
+  	width: 291px;
+	font-weight: 500;
+}
+.div {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 75.5px);
+  	text-transform: uppercase;
+}
+.div1 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 1.5px);
+  	text-transform: uppercase;
+}
+.div2 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% + 72.5px);
+  	text-transform: uppercase;
+}
+.parent {
+  	position: absolute;
+  	top: calc(50% - 8.5px);
+  	left: calc(50% - 145.55px);
+  	width: 291px;
+  	height: 17px;
+}
+.horas {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 62.5px);
+  	text-transform: uppercase;
+}
+.min {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% + 17.5px);
+  	text-transform: uppercase;
+}
+.seg {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% + 89.5px);
+  	text-transform: uppercase;
+}
+.das {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 117.5px);
+  	text-transform: uppercase;
+}
+.horas-parent {
+  	position: absolute;
+  	top: 75px;
+  	left: -3px;
+  	width: 291px;
+  	height: 17px;
+}
+.timer {
+  position: relative;
+  background: transparent;
+  padding: 32px 16px 24px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.faltan-parent {
+  	align-self: stretch;
+  	position: relative;
+  	height: 97px;
+  	font-size: 16px;
+  	font-family: v.$fuente_principal;
+}
+.frame-parent {
+  	width: 291px;
+  	height: 267px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center; /* Cambiado de flex-start a center */
+  	justify-content: flex-start;
+  	gap: 36px;
+}
+.bloque-2-introduccin {
+    width: 100%; // Asegura que ocupe todo el ancho
+    max-width: none; // Elimina el ancho máximo si existe
+    margin: 0; // Elimina el centrado automático
+}
+.bloque-2-introduccin {
+    width: 100%;
+  	position: relative;
+  	background-color: #f6f6f6;
+  	height: 570px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 100px 73px;
+  	box-sizing: border-box;
+  	text-align: center;
+    font-size: 14px;
+    color: #0d0d0d;
+    font-family: Lato;
+}
+.contador {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+.bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+.numero {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  font-family: 'Lato', Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.unidad {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+.separador {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 10px 10px 10px;
+  line-height: 2;
+  font-family: 'Lato', Arial, sans-serif;
+}
+

@@ -1,0 +1,85 @@
+.quers-saber-ms {
+  	align-self: stretch;
+  	position: relative;
+  	text-transform: uppercase;
+}
+.ac-te-contamos {
+  	margin: 0;
+    color: #f6f6f6;
+}
+.ac-te-contamos-container {
+  	position: relative;
+  	font-size: 16px;
+}
+.quers-saber-ms-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 24px;
+    color: #f6f6f6;
+}
+.dress-code {
+  	position: absolute;
+  	top: 6.9%;
+  	left: 0%;
+  	letter-spacing: 0.05em;
+  	font-weight: 600;
+}
+.dropdown1-child {
+  	position: absolute;
+  	height: 6.9%;
+  	width: 100%;
+  	top: 100%;
+  	right: 0%;
+  	bottom: -6.9%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.chevron-right-icon {
+  	position: absolute;
+  	height: 82.76%;
+  	width: 9.2%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 17.24%;
+  	left: 90.8%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.dropdown1 {
+  	width: 261px;
+  	position: relative;
+  	height: 29px;
+}
+.dropdown1-parent {
+  	width: 261px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	gap: 24px;
+  	text-align: left;
+  	font-size: 16px;
+}
+.bloque-8-ms {
+  	width: 100%;
+  	position: relative;
+  	background-color: #185453;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 57px;
+  	box-sizing: border-box;
+  	gap: 24px;
+  	text-align: center;
+  	font-size: 14px;
+  	color: #f6f6f6;
+  	font-family: Lato;
+}
+

@@ -1,0 +1,82 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.florderarriba-icon{
+	width: 50%;
+    height: 50%;
+    max-width: 48vw;
+    max-height: 66vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.florizqabjo-icon {
+    /*width: 174px;
+    height: 223px;
+    max-width: 68vw;
+    max-height: 100vw;  // Cambia este valor para el tamaño máximo responsivo*/
+
+	width: 50%;
+    height: 50%;
+    max-width: 50vw;
+    max-height: 57vw;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding: 0; // Ajusta el padding según lo necesites
+	position: absolute;
+	bottom: 0;
+	left: -10px;
+//	pointer-events: none; // Opcional, si no quieres que tape contenido interactivo
+}
+
+.title {
+	text-align: center;
+  	position: relative;
+  	letter-spacing: 0.25em;
+  	font-weight: 300;
+}
+.subtitle {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.05em;
+  	font-weight: 300;
+  	font-family: Lato;
+  	text-align: center;
+}
+.text {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	gap: 16px;
+	font-family: v.$fuente_Titulo;
+	font-size: 40px;
+}
+
+.bloque1 {
+  	width: 100%;
+	height: 630px;
+  	position: relative;
+  	background-color: #fae7d7;
+  	display: flex;
+  	flex-direction: column;
+	align-items: center;
+  	justify-content: center;
+  	gap: 30px;
+  	color: #000;
+	
+
+}
+
+
+
+
+
