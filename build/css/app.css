@@ -479,7 +479,7 @@ body > section {
   margin: 0;
   font-family: "Lato";
   font-size: 24px;
-  font-weight: 1000;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -621,7 +621,7 @@ body > section {
   font-family: "Montserrat", sans-serif;
 }
 
-.frame-parent {
+.frame-parent-b2 {
   width: 291px;
   height: 267px;
   display: flex;
@@ -646,7 +646,7 @@ body > section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 100px 73px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   text-align: center;
   font-size: 14px;
@@ -702,9 +702,13 @@ body > section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/bloque-3-ceremonia.jpg);
+  background-image: url(../../src/img/galeria/fondo-texturado.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #f6f6f6;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .contenedor-interno {
@@ -936,7 +940,7 @@ body > section {
   font-weight: bold;
 }
 
-.frame-container {
+.frame-container-b6 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -951,7 +955,7 @@ body > section {
   font-size: 16px;
 }
 
-.frame-group {
+.frame-group-b6 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -985,7 +989,7 @@ body > section {
   font-family: Lato;
 }
 
-.frame-parent {
+.frame-parent-b6 {
   width: 262px;
   display: flex;
   flex-direction: column;
@@ -1082,6 +1086,7 @@ body > section {
   font-weight: 900;
 }
 
+/* --- Tu CSS Original --- */
 .quers-saber-ms {
   align-self: stretch;
   position: relative;
@@ -1140,15 +1145,20 @@ body > section {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  /* Modificación: Añadir transición y cursor */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .dropdown1 {
   width: 261px;
   position: relative;
   height: 29px;
+  /* Modificación: Añadir cursor para indicar que es clickeable */
+  cursor: pointer;
 }
 
-.dropdown1-parent {
+.dropdown1-parent { /* Renombrado en HTML a dropdown-main-parent para claridad */
   width: 261px;
   display: flex;
   flex-direction: column;
@@ -1173,7 +1183,91 @@ body > section {
   text-align: center;
   font-size: 14px;
   color: #f6f6f6;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
+}
+
+/* --- CSS Adicional para la funcionalidad --- */
+.dropdown-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-content {
+  /* Oculto por defecto */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding-top 0.4s ease-out, padding-bottom 0.4s ease-out;
+  color: #f6f6f6;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dropdown-content .texto-dropdown {
+  color: #f6f6f6;
+  font-size: 16px;
+}
+
+.dropdown-content p {
+  margin: 8px 0;
+}
+
+/* Estilo cuando el dropdown está activo/abierto */
+.dropdown-container.active .dropdown-content {
+  max-height: 500px; /* Altura máxima suficiente para el contenido */
+  padding-top: 15px;
+  padding-bottom: 10px;
+  transition: max-height 0.5s ease-in, padding-top 0.4s ease-in, padding-bottom 0.4s ease-in;
+}
+
+/* Rotación del ícono cuando está activo */
+.dropdown-container.active .chevron-right-icon {
+  transform: rotate(90deg);
+}
+
+/* Estilos de texto específicos */
+.font-weight-300 {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+.small-uppercase {
+  color: #f6f6f6;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Estilos para el botón de copiar */
+.copy-button {
+  background-color: #f6f6f6;
+  color: #185453;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #e0e0e0;
+}
+
+.copy-button.copied {
+  background-color: #185453; /* Verde para indicar éxito */
+  color: white;
+  border: 2px solid #f6f6f6;
 }
 
 .carta-icon {
@@ -1201,7 +1295,7 @@ body > section {
 }
 
 .contamos-con-tu-container {
-  width: 245px;
+  width: 262px;
   position: relative;
   display: inline-block;
   font-size: 16px;
@@ -1229,15 +1323,17 @@ body > section {
   border-radius: 16px;
   background-color: #185453;
   height: 52px;
+  width: 260px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  align-self: center;
   padding: 16px 48px;
   box-sizing: border-box;
   font-size: 16px;
-  color: #f6f6f6;
-  font-family: Montserrat;
+  color: #fff;
+  font-family: Lato;
 }
 
 .carta-parent {
@@ -1245,7 +1341,7 @@ body > section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 29px;
 }
 
@@ -1256,7 +1352,7 @@ body > section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 80px 10px;
   box-sizing: border-box;
   text-align: center;

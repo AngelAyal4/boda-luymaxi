@@ -26,3 +26,56 @@ function actualizarCuentaRegresiva() {
 
 actualizarCuentaRegresiva();
 setInterval(actualizarCuentaRegresiva, 1000);
+
+//-------------DROPDOWN MENU------------------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Selecciona todos los contenedores de dropdown
+            const dropdownContainers = document.querySelectorAll('.dropdown-container');
+
+            dropdownContainers.forEach(container => {
+                // Encuentra el encabezado clickeable dentro de cada contenedor
+                const toggle = container.querySelector('.dropdown1');
+
+                toggle.addEventListener('click', () => {
+                    // Cierra todos los demás dropdowns abiertos
+                    dropdownContainers.forEach(otherContainer => {
+                        if (otherContainer !== container) {
+                            otherContainer.classList.remove('active');
+                        }
+                    });
+                    
+                    // Alterna la clase 'active' en el contenedor clickeado
+                    container.classList.toggle('active');
+                });
+            });
+
+            // Funcionalidad del botón para copiar
+            const copyButton = document.getElementById('copyAliasButton');
+            if (copyButton) {
+                copyButton.addEventListener('click', (event) => {
+                    // Evita que el evento de clic se propague al dropdown y lo cierre
+                    event.stopPropagation(); 
+                    
+                    const textToCopy = copyButton.innerText;
+
+                    // Usa la API del portapapeles para copiar el texto
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        // Feedback visual para el usuario
+                        const originalText = copyButton.innerText;
+                        copyButton.innerText = '¡Copiado!';
+                        copyButton.classList.add('copied');
+
+                        // Vuelve al texto y estilo original después de 2 segundos
+                        setTimeout(() => {
+                            copyButton.innerText = originalText;
+                            copyButton.classList.remove('copied');
+                        }, 2000);
+                    }).catch(err => {
+                        // Manejo de errores en caso de que no se pueda copiar
+                        console.error('Error al copiar el texto: ', err);
+                        alert('No se pudo copiar el alias.');
+                    });
+                });
+            }
+        });
