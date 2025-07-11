@@ -169,12 +169,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Array de las 6 imágenes del carrusel. Asegúrate de que las rutas sean correctas.
     const imagenes = [
-        'src/img/galeria/Rectangle 94.png',
-        'src/img/galeria/Rectangle 95.png',
-        'src/img/galeria/Rectangle 96.png',
-        'src/img/galeria/Rectangle 97.png',
-        'src/img/galeria/Rectangle 98.png',
-        'src/img/galeria/Rectangle 99.png',
+        'src/img/galeria/Rectangle-94.webp',
+        'src/img/galeria/Rectangle-95.webp',
+        'src/img/galeria/Rectangle-96.webp',
+        'src/img/galeria/Rectangle-97.webp',
+        'src/img/galeria/Rectangle-98.webp',
+        'src/img/galeria/Rectangle-99.webp',
     ];
 
     let indiceActual = 0; // El índice de la imagen actualmente mostrada
