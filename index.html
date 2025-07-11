@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamiento LU&MAXI</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questa Grande:wght@300&display=swap" />
-  	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Hojas de Estilo -->
+    <!-- Tu hoja de estilos principal -->
     <link rel="stylesheet" href="build/css/app.css">
+    <!-- Estilos adicionales para el modal (este es el nuevo archivo CSS) -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    	<div class="bloque1">
+    <!-- MODAL DE BIENVENIDA -->
+    <div id="welcome-modal">
+        <img class="florderarriba-icon" src="src/img/FlorDerArriba.svg" alt="Decoración floral superior" />
+        <div class="text-container">
+            <div class="title">LU&MAXI</div>
+            <div class="subtitle">¡Nos casamos!</div>
+            <!-- Botón de Ingreso (ya no es un enlace) -->
+            <div id="enter-button">
+                <span class="button0">Ingresar</span>
+            </div>
+        </div>
+        <img class="florizqabjo-icon" src="src/img/FlorIzqAbjo.svg" alt="Decoración floral inferior" />
+    </div>
 
-			<img class="florderarriba-icon" src="src/img/FlorDerArriba.svg" alt="icono" />
-
-			<div class="text">
-					<div class="title">LU&MAXI</div>
-					<div class="subtitle">¡Nos casamos!</div>
-			</div>
-
-			<img class="florizqabjo-icon" src="src/img/FlorIzqAbjo.svg" alt="icono abajo izquierda" />
-		
- 	    </div>
-
-	<div class="bloque-2-introduccin">
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+    <main id="main-content">
+        <button id="music-toggle" aria-label="Pausar música" style="display:none;">
+            <i id="music-icon" class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <!-- Todo el contenido de tu 'main.html' va aquí -->
+        <div class="bloque1">
+            <div class="foto-bloque1-container">
+                <img class="foto-bloque1-img" src="src/img/fotoBloque1.png" alt="Foto principal" />
+                <img class="scroll-indicador" src="src/img/scrollIndicator.svg" alt="Indicador de scroll" />
+            </div>
+        </div>
+        <div class="bloque-2-introduccin">
     		<div class="bloque-2-introduccin-inner">
       			<div class="frame-parent-b2">
         				<div class="frame-group">
@@ -43,7 +62,6 @@
           					</div>
           					<div class="corazon-container">
 									<img class="corazon-icon1" alt="" src="src/img/corazon.svg">
-            						
           					</div>
         				</div>
         				<div class="faltan-parent">
@@ -74,32 +92,29 @@
         				</div>
       			</div>
     		</div>
-  	</div>
-
-	<div class="bloque-3-ceremonia">
-		<div class="contenido-interno">
-			<div class="anillos-wrapper">
-        		<img class="anillos" alt="" src="src/img/anillos.svg">
-        	</div>
-      		<div class="ceremonia">Ceremonia</div>
-      		<div class="iglesia-san-roque-container">
-          		<p class="iglesia-san-roque">Iglesia San Roque</p>
-          		<p class="iglesia-san-roque">Cayetano Errico 44</p>
-          		<p class="iglesia-san-roque">- Capitán Bermúdez -</p>
-          		<p class="iglesia-san-roque">20:30 Horas</p>
-        	</div>
-        	<div class="button">
-            <a class="button1" href="https://g.co/kgs/4AgcTx3" target="_blank">cómo llegar</a>
-        	</div>
-		</div>
-	</div>
-
-	<div class="bloque-4-fiesta">
+  	    </div>
+        <div class="bloque-3-ceremonia">
+            <div class="contenido-interno">
+                <div class="anillos-wrapper">
+                    <img class="anillos" alt="" src="src/img/anillos.svg">
+                </div>
+                <div class="ceremonia">Ceremonia</div>
+                <div class="iglesia-san-roque-container">
+                    <p class="iglesia-san-roque">Iglesia San Roque</p>
+                    <p class="iglesia-san-roque">Cayetano Errico 44</p>
+                    <p class="iglesia-san-roque">- Capitán Bermúdez -</p>
+                    <p class="iglesia-san-roque">20:30 Horas</p>
+                </div>
+                <div class="button">
+                <a class="button1" href="https://g.co/kgs/4AgcTx3" target="_blank">cómo llegar</a>
+                </div>
+            </div>
+        </div>
+        <div class="bloque-4-fiesta">
     		<div class="frame-parent">
       			<div class="frame-group">
         				<div class="copas-wrapper">
           					<img class="copas-icon" alt="" src="src/img/copas.svg">
-          					
         				</div>
         				<div class="fiesta-parent">
           					<div class="fiesta">Fiesta</div>
@@ -117,22 +132,19 @@
         				<a class="button1" href="https://g.co/kgs/y844kW4" target="_blank">cómo llegar</a>
       			</div>
     		</div>
-  	</div>
-
-	<div class="bloque-5">
-		<div class="galeria-imagenes">
-			<img class="imagen-carrusel" alt="" src="src/img/galeria/Rectangle 94.png">
-			<img class="imagen-siguiente" alt="" src="src/img/Frame 23.svg">
-			<img class="imagen-anterior" alt="" src="src/img/Frame 24.svg">
-		</div>
-	</div>
-
-	<div class="bloque-6-musica">
+  	    </div>
+        <div class="bloque-5">
+        <div class="galeria-imagenes">
+                <img class="imagen-carrusel" alt="Imagen del carrusel" src="src/img/galeria/Rectangle 94.png">
+                <div class="area-control izquierda"></div>
+                <div class="area-control derecha"></div>
+            </div>
+        </div>
+        <div class="bloque-6-musica">
     		<div class="frame-parent-b6">
       			<div class="frame-group-b6">
         				<div class="frame-container-b6">
           					<img class="frame-child" alt="" src="src/img/Frame 74.svg">
-          					
           					<div class="qu-tema-no-container">
             						<p class="qu-tema-no">¿Qué tema no</p>
             						<p class="qu-tema-no">puede faltar?</p>
@@ -147,89 +159,75 @@
         					<a class="button1" href="https://open.spotify.com/playlist/0cFGNLL7K5w4fcIDwBtojV?si=321614093e9548a9&pt=f9cff8ccac64de3b0b9051b934ff94c2" target="_blank">Sumar canción</a>
       					</div>
       			</div>
-      			
     		</div>
-  	</div>
-
-	<div class="bloque-7-instagram">
-        				<div class="frame-g7">
-          					<div class="ig-wrapper">
-            						<img class="ig-icon" alt="" src="src/img/IG.svg">
-            						
-          					</div>
-          					<div class="queremos-ver-cmo-container">
-            						<p class="queremos-ver-cmo">Queremos ver cómo te preparás</p>
-            						<p class="queremos-ver-cmo">
-              							<span>para el evento. </span>
-              							<b class="seguinos-y-etiquetanos">¡Seguinos y etiquetanos!</b>
-            						</p>
-          					</div>
-							<div class="instagram-post">
-								<img class="imagen-ig" alt="" src="src/img/Instagram post.png">
-      						</div>
-        				</div>
-        				
-      			<div class="button">
-        				<a class="button1" href="https://www.instagram.com/bodaluymaxi/" target="_blank">ir a instagram</a>
-      			</div>
-	</div>	
-
-	<div class="bloque-8-ms">
-        <div class="quers-saber-ms-parent">
-            <div class="quers-saber-ms">¿querés saber más?</div>
-            <div class="ac-te-contamos-container">
-                <p class="ac-te-contamos">Acá te contamos todos</p>
-                <p class="ac-te-contamos">los detalles:</p>
+  	    </div>
+        <div class="bloque-7-instagram">
+            <div class="frame-g7">
+                <div class="ig-wrapper">
+                    <img class="ig-icon" alt="" src="src/img/IG.svg">
+                </div>
+                <div class="queremos-ver-cmo-container">
+                    <p class="queremos-ver-cmo">Queremos ver cómo te preparás</p>
+                    <p class="queremos-ver-cmo">
+                        <span>para el evento. </span>
+                        <b class="seguinos-y-etiquetanos">¡Seguinos y etiquetanos!</b>
+                    </p>
+                </div>
+                <div class="instagram-post">
+                    <img class="imagen-ig" alt="" src="src/img/Instagram post.png">
+                </div>
+            </div>
+            <div class="button">
+                <a class="button1" href="https://www.instagram.com/bodaluymaxi/" target="_blank">ir a instagram</a>
+            </div>
+	    </div>	
+        <div class="bloque-8-ms">
+            <div class="quers-saber-ms-parent">
+                <div class="quers-saber-ms">¿querés saber más?</div>
+                <div class="ac-te-contamos-container">
+                    <p class="ac-te-contamos">Acá te contamos todos</p>
+                    <p class="ac-te-contamos">los detalles:</p>
+                </div>
+            </div>
+            <div class="dropdown1-parent">
+                <div class="dropdown-container">
+                    <div class="dropdown1">
+                        <i class="dress-code">Dress Code</i>
+                        <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
+                    </div>
+                    <div class="dropdown-content">
+                        <p class="texto-dropdown">Respetar el dresscode, les pedimos evitar blanco, tonos claros y verde.</p>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown1">
+                        <i class="dress-code">Tarjeta</i>
+                        <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
+                    </div>
+                    <div class="dropdown-content">
+                        <p class="texto-dropdown">Si quieren, ya pueden empezar a abonarla.</p>
+                        <p class="texto-dropdown">El valor actual es de: $...</p>
+                        <p class="font-weight-300">Un dato a tener en cuenta: el precio podría cambiar desde Octubre.</p>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown1">
+                        <i class="dress-code">Regalo</i>
+                        <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
+                    </div>
+                    <div class="dropdown-content">
+                        <p class="texto-dropdown" >Su compañía es el mejor regalo que podemos recibir.</p>
+                        <p class="texto-dropdown">Pero si desean tener un gesto, pueden colaborar con nuestra luna de miel.</p>
+                        <p class="small-uppercase">Nuestro alias de (mercado pago)</p>
+                        <button class="copy-button" id="copyAliasButton">BODA.LU.MAXI</button>
+                        <span class="instruccion">Toca para copiar el alias</span>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="dropdown1-parent">
-
-            <div class="dropdown-container">
-                <div class="dropdown1">
-                    <i class="dress-code">Dress Code</i>
-                    <img class="dropdown1-child" alt="" src="Line 19.svg">
-                    <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
-                </div>
-                <div class="dropdown-content">
-                    <p class="texto-dropdown">Respetar el dresscode, les pedimos evitar blanco, tonos claros y verde.</p>
-                </div>
-            </div>
-
-            <div class="dropdown-container">
-                <div class="dropdown1">
-                    <i class="dress-code">Tarjeta</i>
-                    <img class="dropdown1-child" alt="" src="Line 19.svg">
-                    <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
-                </div>
-                <div class="dropdown-content">
-                    <p class="texto-dropdown">Si quieren, ya pueden empezar a abonarla.</p>
-                    <p class="texto-dropdown">El valor actual es de: $...</p>
-                    <p class="font-weight-300">Un dato a tener en cuenta: el precio podría cambiar desde Octubre.</p>
-                </div>
-            </div>
-
-            <div class="dropdown-container">
-                <div class="dropdown1">
-                    <i class="dress-code">Regalo</i>
-                    <img class="dropdown1-child" alt="" src="Line 19.svg">
-                    <img class="chevron-right-icon" alt="Desplegar" src="src/img/Chevron right.svg">
-                </div>
-                <div class="dropdown-content">
-                    <p  class="texto-dropdown" >Su compañía es el mejor regalo que podemos recibir.</p>
-                    <p  class="texto-dropdown">Pero si desean tener un gesto, pueden colaborar con nuestra luna de miel.</p>
-                    <p class="small-uppercase">Nuestro alias de (mercado pago)</p>
-                    <button class="copy-button" id="copyAliasButton">BODA.LU.MAXI</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-	<div class="bloque-9-asistencia">
+        <div class="bloque-9-asistencia">
     		<div class="carta-parent">
       			<img class="carta-icon" alt="" src="src/img/carta.svg">
-      			
       			<div class="confirmacin-de-asistencia">confirmación de asistencia</div>
       			<div class="contamos-con-tu-container">
         				<p class="contamos-con-tu">Contamos con tu presencia en</p>
@@ -242,27 +240,27 @@
         				<a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSemTMuJglLT5Q4UzH8DnlggAOmackVPrfNjwGB7vlnAL2Jl5Q/viewform" target="_blank">IR A formulario</a>
       			</div>
     		</div>
-  	</div>
-
-	<div class="bloque-10-despedida">
+  	    </div>
+        <div class="bloque-10-despedida">
     		<div class="frame-parent">
       			<div class="te-esperamos-para-compartir-es-parent">
         				<i class="te-esperamos-para">Te esperamos para compartir este momento.</i>
         				<div class="lm">L&M</div>
       			</div>
-      			
     		</div>
-			
-  	</div>
-	<div class="img-superpuesta-container">
-		<img class="dsc0122-1-icon" alt="" src="src/img/_DSC0122 1.png">
-		<div class="capa-1-wrapper">
-			<img class="capa-1-icon" alt="" src="src/img/Capa_1.svg">
-		</div>
-	</div>
-	
+  	    </div>
+        <div class="img-superpuesta-container">
+            <img class="dsc0122-1-icon" alt="" src="src/img/_DSC0122 1.png">
+            <div class="capa-1-wrapper">
+                <img class="capa-1-icon" alt="" src="src/img/Capa_1.svg">
+            </div>
+        </div>
+    </main>
 
-    <script src="build/js/app.js"></script>
+    <!-- Elemento de audio -->
+	<audio id="background-music" loop src="../CasamienoMaxiLu/src/musica/DieWithASmile.mp3"></audio>
 
+    <!-- Script principal de la aplicación -->
+    <script src="src/js/app.js" defer></script>
 </body>
 </html>
