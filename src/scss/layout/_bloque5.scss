@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     max-width: 400px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -43,6 +43,7 @@
     width: 20%; // Puedes ajustar este porcentaje según qué tan ancho quieras el área de clic
     cursor: pointer;
     z-index: 2; // Asegura que esté por encima de la imagen
+    outline: none;
     // background-color: rgba(0, 255, 0, 0.2); // Descomenta para visualizar las áreas durante el desarrollo
 }
 
